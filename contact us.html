@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us | Tech Pulse Support</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background: #fff;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            color: #222;
+        }
+        header {
+            background: linear-gradient(90deg, #00b894 0%, #0984e3 100%);
+            color: #fff;
+            padding: 32px 0 24px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+        }
+        main {
+            max-width: 900px;
+            margin: 32px auto;
+            padding: 24px;
+            background: #f8fefc;
+            border-radius: 12px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+        }
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 32px;
+            align-items: flex-start;
+        }
+        .contact-details {
+            flex: 2;
+        }
+        .contact-details h2 {
+            color: #00b894;
+            margin-bottom: 12px;
+        }
+        .contact-details p {
+            margin: 8px 0;
+        }
+        .contact-form {
+            margin-top: 24px;
+        }
+        .contact-form label {
+            display: block;
+            margin: 12px 0 4px 0;
+            font-weight: 500;
+        }
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #b2bec3;
+            border-radius: 6px;
+            margin-bottom: 16px;
+            font-size: 1rem;
+        }
+        .contact-form button {
+            background: #0984e3;
+            color: #fff;
+            border: none;
+            padding: 12px 28px;
+            border-radius: 6px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .contact-form button:hover {
+            background: #00b894;
+        }
+        .members-list-container {
+            flex: 1;
+            background: #eafaf1;
+            border-radius: 10px;
+            box-shadow: 0 1px 6px rgba(0,184,148,0.08);
+            padding: 18px;
+            margin-top: 0;
+            min-width: 220px;
+            max-height: 240px; /* Increased height */
+            overflow: hidden;
+            position: relative;
+        }
+
+        .members-list-title {
+            color: #0984e3;
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            text-align: center;
+            font-weight: 600;
+        }
+    
+ .members-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            height: 240px; /* Increased height */
+            overflow: hidden;
+            position: relative;
+        }
+      
+         .members-list li {
+            background: #fff;
+            margin: 6px 0;
+            padding: 10px 0;
+            border-radius: 6px;
+            text-align: center;
+            font-weight: 500;
+            color: #00b894;
+            font-size: 1.05rem;
+            box-shadow: 0 1px 4px rgba(9,132,227,0.07);
+        }
+       
+         /* Scrolling animation */
+        @keyframes scrollMembers {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(-50%); }
+        }
+       
+        .members-list {
+            animation: scrollMembers 12s linear infinite; /* Slower animation */
+        }
+        footer {
+            text-align: center;
+            padding: 18px 0;
+            background: #0984e3;
+            color: #fff;
+            margin-top: 40px;
+            font-size: 1rem;
+        }
+        @media (max-width: 700px) {
+            main {
+                padding: 12px;
+            }
+            .contact-info {
+                flex-direction: column;
+                gap: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tech Pulse Support</h1>
+        <p>Contact Us</p>
+    </header>
+    <main>
+        <div class="contact-info">
+            <div class="contact-details">
+                <h2>Get in Touch</h2>
+                <p>We're here to help you with all your tech support needs. Reach out to us using the form below or via our contact details.</p>
+                <p><strong>Email:</strong> ithelp@techsupport.com</p>
+                <p><strong>Phone:</strong> +27 67 974 1100</p>
+                <p><strong>Address:</strong> 123 rose Avenue, Johannesburg, South Africa</p>
+                <form class="contact-form">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                    
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+            <div class="members-list-container">
+                <div class="members-list-title">Our Team Members</div>
+                <ul class="members-list">
+                    <li>Ntshovelo Mthombeni</li>
+                    <li>Sihle Khaweni</li>
+                    <li>Vuyokazi Maine</li>
+                    <li>Kagiso Galogakoe</li>
+                    <li>Lesther Ndlovu</li>
+                    <!-- Repeat for smooth scrolling effect -->
+                    <li>Ntshovelo Mthombeni</li>
+                    <li>Sihle Khaweni</li>
+                    <li>Vuyokazi Maine</li>
+                    <li>Kagiso Galogakoe</li>
+                    <li>Lesther Ndlovu</li>
+                </ul>
+            </div>
+        </div>
+        <nav>
+    <a href="techpulse website.html">Home</a>
+</nav>
+    </main>
+    <footer>
+        &copy; 2025 Tech Pulse Support. All rights reserved.
+    </footer>
+</body>
+</html>

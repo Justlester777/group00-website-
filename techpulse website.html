@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tech Pulse Support</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #0074D9;
+            --secondary: #2ECC40;
+            --background: #f8faff;
+            --nav-bg: #ffffff;
+            --nav-hover: #e6f7ff;
+            --text: #222;
+            --shadow: 0 2px 8px rgba(0,0,0,0.07);
+        }
+        body {
+            margin: 0;
+            font-family: 'Roboto', Arial, sans-serif;
+            background: var(--background);
+            color: var(--text);
+        }
+        header {
+            background: linear-gradient(90deg, var(--primary) 60%, var(--secondary) 100%);
+            color: #fff;
+            padding: 32px 0 24px 0;
+            text-align: center;
+            box-shadow: var(--shadow);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+            font-weight: 700;
+            text-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        nav {
+            background: var(--nav-bg);
+            box-shadow: var(--shadow);
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+            padding: 0.5rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        nav a {
+            text-decoration: none;
+            color: var(--primary);
+            font-weight: 500;
+            padding: 10px 22px;
+            border-radius: 24px;
+            transition: background 0.2s, color 0.2s, transform 0.2s;
+            font-size: 1.1rem;
+            position: relative;
+        }
+        nav a:hover, nav a.active {
+            background: var(--nav-hover);
+            color: var(--secondary);
+            transform: translateY(-2px) scale(1.05);
+            box-shadow: 0 2px 8px rgba(44,204,64,0.07);
+        }
+        main {
+            max-width: 900px;
+            margin: 32px auto;
+            background: #fff;
+            border-radius: 16px;
+            box-shadow: var(--shadow);
+            padding: 32px;
+            min-height: 400px;
+            animation: fadeIn 0.7s;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px);}
+            to { opacity: 1; transform: translateY(0);}
+        }
+        .hero {
+            text-align: center;
+            padding: 48px 0 32px 0;
+        }
+        .hero h2 {
+            font-size: 2.2rem;
+            color: var(--primary);
+            margin-bottom: 16px;
+        }
+        .hero p {
+            font-size: 1.25rem;
+            color: #444;
+            margin-bottom: 32px;
+        }
+        .cta-btn {
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            color: #fff;
+            border: none;
+            padding: 16px 40px;
+            border-radius: 32px;
+            font-size: 1.2rem;
+            font-weight: 700;
+            cursor: pointer;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            transition: background 0.2s, transform 0.2s;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .cta-btn:hover {
+            background: linear-gradient(90deg, var(--secondary), var(--primary));
+            transform: scale(1.05);
+        }
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 32px;
+            justify-content: center;
+            margin-top: 40px;
+        }
+        .feature {
+            background: var(--nav-hover);
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+            padding: 24px;
+            flex: 1 1 220px;
+            min-width: 220px;
+            max-width: 280px;
+            text-align: center;
+        }
+        .feature-icon {
+            font-size: 2.5rem;
+            color: var(--secondary);
+            margin-bottom: 12px;
+        }
+        .feature-title {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 8px;
+        }
+        .feature-desc {
+            color: #444;
+            font-size: 1rem;
+        }
+        footer {
+            background: var(--primary);
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+            font-size: 1rem;
+            border-radius: 0 0 16px 16px;
+        }
+        @media (max-width: 700px) {
+            main { padding: 16px; }
+            nav { gap: 8px; }
+            nav a { padding: 8px 10px; font-size: 1rem; }
+            .features { flex-direction: column; gap: 16px; }
+
+             .header-flex {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 18px;
+        max-width: 900px;
+        margin: 0 auto; }
+
+        .logo-img {
+        height: 56px;
+        width: 56px;
+        object-fit: contain;
+        border-radius: 8px;
+        margin-right: 12px;
+        background: #fff;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+     .header-title h1 {
+        margin: 0;
+        font-size: 2.5rem;
+        letter-spacing: 2px;
+        font-weight: 700;
+        text-shadow: 0 2px 8px rgba(0,0,0,0.08);
+
+        
+    }
+    .header-title p {
+        margin: 0;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tech Pulse Support</h1>
+        <p>Your trusted partner in technical support</p>
+    </header>
+    <nav>
+        <a href="index.html" class="active">Home</a>
+        <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=RI8M4Wn0j0S8DdeBKI_wG6CEQBmCqV5Ao7cjdC1471pURTE5T0s0VjFFTkdMSkJFRkhNNExKVzdOQS4u">Call Log Form</a>
+        <a href="escalation.html">Escalation Procedure</a>
+        <a href="troubleshooting.html">Troubleshooting Questions</a>
+        <a href="asset-register.html">Asset Register</a>
+        <a href="contact us.html">Contact us</a>
+    </nav>
+    <main>
+        <section class="hero">
+            <h2>Expert Technical Support, Whenever You Need It</h2>
+            <p>
+                Tech Pulse Support delivers fast, friendly, and reliable technical support for your business and personal IT needs.<br>
+                Our team is ready to resolve your issues and keep your technology running smoothly.
+            </p>
+            <a href="call-log.html" class="cta-btn">Log a Support Call</a>
+        </section>
+        <div class="features">
+            <div class="feature">
+                <div class="feature-icon">💡</div>
+                <div class="feature-title">Fast Response</div>
+                <div class="feature-desc">Get help quickly from our expert technicians, 24/7.</div>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">🔒</div>
+                <div class="feature-title">Secure Solutions</div>
+                <div class="feature-desc">Your data and systems are protected with every support interaction.</div>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">🤝</div>
+                <div class="feature-title">Personalized Service</div>
+                <div class="feature-desc">We tailor our support to your unique needs and environment.</div>
+            </div>
+            <header>
+                <header>
+    <div class="header-flex">
+        <img src="logo.png" alt="Tech Pulse Support Logo" class="logo-img">
+        <div class="header-title">
+            <h1></h1>
+            <p></p>
+        </div>
+    </div>
+</header>
+  
+        
+            <h1 style="margin: 0;">Tech Pulse Support</h1>
+            <p style="margin: 0;">Your trusted partner in technical support</p>
+        </div>
+    </div>
+</header>
+        </div>
+    </main>
+    <footer>
+        &copy; 2025 Tech Pulse Support. All rights reserved.
+    </footer>
+</body>
+</html>
